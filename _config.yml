@@ -1,64 +1,73 @@
+# https://github.com/cotes2020/jekyll-theme-chirpy
+
 # The Site Configuration
 
-# Import the theme
+# import하는 테마 명입니다. 디폴트로 사용중인 테마 명이 들어가 있으므로, 수정은 하지 않습니다.
 theme: jekyll-theme-chirpy
 
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
+# 사용자 페이지를 만들었을 경우, 빈칸으로 둡니다. 프로젝트 페이지를 만든 경우 프로젝트 명을 적어줍니다.
+# 사용자 페이지와 프로젝트 페이지를 모르신다면, [초보자를 위한 GitHub Blog 만들기 - 1]
+# (https://wlqmffl0102.github.io/posts/Making-Git-blogs-for-beginners-1/)에서 
+# Step 1-2. repository생성을 참고하시길 바랍니다.
 baseurl: ""
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
+# # 사용하는 언어 설정을 진행합니다. 
+# http://www.lingoes.net/en/translator/langcode.htm 로 접속하여 확인가능합니다.
 lang: en
 
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+#timezone설정입니다. http://www.timezoneconverter.com/cgi-bin/findzone/findzone 에서 확인가능합니다.
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: 포뭉이 블로그  # 블로그 이름입니다. 설정하면 브라우저 상단에 설정된 이름이 확인가능합니다.
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 념념 # 서브 타이틀 입니다. 설정하면 블로그 첫 페이지 좌측에서 확인 가능합니다.
 
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+description: >-  # "used by seo meta and the atom feed"라고 나옵니다. 저는 설정을 그대로 두었습니다.
+  A minimal, portfolio, sidebar,
+  bootstrap Jekyll theme with responsive web design
+  and focuses on text presentation.  
 
-# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+# 'https://username.github.io'와 같이 설정합니다. 설정이 잘 못 되면 곤란합니다. 잘 적어넣도록 합니다.
+url: "https://jeonghunin.github.io"
+
+# 본인의 twitter username을 적습니다. 저는 트위터는 사용하지 않아 주석 처리 해 두었습니다.
+#twitter:
+#  username: twitter_username
 
 github:
-  username: github_username # change to your github username
-
-twitter:
-  username: twitter_username # change to your twitter username
+  username: jeonghunin # 본인의 github username을 적습니다.
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: 포뭉이
+  email: ii8183ii@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://github.com/jeonghunIn/jeonghunin.github.io # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+# 상단은 social관련 내용입니다. 본인의 이름, 이메일, 링크 등을 작성합니다. 저는 깃허브만 올려두었습니다.
+
+google_site_verification: # Google Search Console관련 내용입니다. 
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: # Google Analytics ID입니다.
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint: # fill in the Google Analytics superProxy endpoint of Google App Engine
     cache_path: # the local PV cache data, friendly to visitors from GFW region
 
+# chirpy테마는 [light|dark]테마를 지원합니다. 
+# 비워두시면 사용자의 디폴트 값이 설정되고, light 또는 dark로 입력해두시면 페이지의 기본 테마가 설정됩니다.
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,
@@ -72,17 +81,20 @@ google_analytics:
 #
 theme_mode: # [light|dark]
 
+
+#cdn 이미지 설정입니다. 저는 따로 진행하지 않았으나 진행하시려면 url을 작성해주시면 됩니다.
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+# img_cdn: "https://chirpy-img.netlify.app"
 
-# the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+# 대표이미지 라고 생각하시면 됩니다. /assets/img경로에 사진을 넣은 뒤 작성하시면 됩니다.
+avatar: "/assets/img/nyum.png"
 
-# boolean type, the global switch for TOC in posts.
+# toc(Table of contents)입니다. 블로그 보시다 보면 포스팅 옆에서 스크롤을 따라오는 목차같은 녀석이 있습니다.
+                # 사용하시려면 true, 아니라면 false를 적으시면 됩니다.
 toc: true
 
 comments:
