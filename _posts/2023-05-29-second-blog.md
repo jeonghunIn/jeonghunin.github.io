@@ -1,19 +1,12 @@
 ---
-title: "블로그 첫 게시물"
-date: YYYY-MM-DD HH:MM:SS +09:00
-categories: [메인 카테고리, 서브 카테고리]
+title: second blog
+date: 2023-05-28 15:23:32 +0900
+categories: [Blogging, Tutorial]
+pin : true
 tags:
-  [
-    태그1,
-    태그2,
-    태그3,
-    .
-    .
-    .
-  ]
+  [google analytics, pageviews]
 ---
-
-# 마크다운 언어 공부!
+마크다운 언어 공부!
 
 # 태그 1
 ## 태그 2
