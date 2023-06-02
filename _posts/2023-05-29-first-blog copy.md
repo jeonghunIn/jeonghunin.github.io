@@ -1,23 +1,29 @@
 ---
-title: first blog
+title: 마크다운 문법
+author: mung
 date: 2023-05-28 12:20:33 +0900
-categories: [태그1, 태그2]
+categories: [blog]
 pin : true
 tags:
   [
-    tag1,
-    tag2,
-    tag3
+    markdown,
+    md,
+    blog
   ]
 ---
-마크다운 언어 공부!
+마크다운 사용법
+## **1. 제목 (Heading)**
+HTML의 `<h1> ~ <h6>`와 태그와 동일합니다.
+```
+# Header 1
+## Header 2
+### Header 3
+```
+{: file="_config.yml"}
+# Header 1
+## Header 2
+### Header 3
 
-# 태그 1
-## 태그 2
-### 태그 3
-#### 태그 4
-##### 태그 5
-###### 태그 6
 이건 **굵기**.
 여기만 *기울임꼴*
 이거는 ***굵고 기울다***
